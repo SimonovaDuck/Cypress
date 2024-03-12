@@ -1,24 +1,24 @@
-// describe('Проверка посещения сайта', () => {
-//   it('Посещение сайта', () => {
-//       // Посещение указанного URL
-//       cy.visit('https://pro-kotikov.ru');
+describe('Проверка посещения сайта', () => {
+  it('Посещение сайта', () => {
+      // Посещение указанного URL
+      cy.visit('https://pro-kotikov.ru');
 
-//       // Проверка URL адреса после посещения
-//       cy.url().should('eq', 'https://pro-kotikov.ru/');
-//   });
-// });
+      // Проверка URL адреса после посещения
+      cy.url().should('eq', 'https://pro-kotikov.ru/');
+  });
+});
 
-// //проверка посещаемости страницы на сайте 
-// describe('Заголовок отдельной страницы', () => {
-//   beforeEach(() => {
-//     cy.visit('https://pro-kotikov.ru/porody/ragdoll')
-//   })
+//проверка посещаемости страницы на сайте 
+describe('Заголовок отдельной страницы', () => {
+  beforeEach(() => {
+    cy.visit('https://pro-kotikov.ru/porody/ragdoll')
+  })
 
-//   it('Заголовок "Рэгдолл" на экране', () => {
-//     cy.get('h1').should('contain.text', 'Рэгдолл') // Проверяем заголовок статьи
-//     cy.get('.header-article').should('be.visible') // Проверяем видимость содержимого статьи
-//   })
-// })
+  it('Заголовок "Рэгдолл" на экране', () => {
+    cy.get('h1').should('contain.text', 'Рэгдолл') // Проверяем заголовок статьи
+    cy.get('.header-article').should('be.visible') // Проверяем видимость содержимого статьи
+  })
+})
 
 describe('Содержание статьи', () => {
   beforeEach(() => {
